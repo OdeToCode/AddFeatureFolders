@@ -1,0 +1,27 @@
+version: 1.0.{build}
+skip_non_tags: false
+build_script:
+- ps: .\build.ps1
+test: off
+branches:
+  only: 
+  - master
+artifacts:
+- path: .\artifacts\**\*.nupkg
+  name: NuGet
+deploy:
+- provider: NuGet
+  api_key:
+    secure: tg20msJwxYqlk0EwjZ1MuPXsX+ORK/7fxdeopd1aSnPaJX+gq9srs7i7VINiYTWS
+  skip_symbols: true
+  on:
+    branch: master
+    appveyor_repo_tag: true
+notifications:
+- provider: Email
+  to:
+  - scott@odetocode.com
+  subject: UseNodeModules Build
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: false

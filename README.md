@@ -1,5 +1,5 @@
 # AddFeatureFolders
-
+[![Build status](https://ci.appveyor.com/api/projects/status/k4aotmbkugavs2mq?svg=true)](https://ci.appveyor.com/project/OdeToCode/addfeaturefolders)
 ### Installation
 ```
     Install-Package OdeToCode.AddFeatureFolders 

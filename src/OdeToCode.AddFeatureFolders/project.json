@@ -1,5 +1,17 @@
 {
   "version": "1.0.0",
+  "authors": [ "K. Scott Allen" ],
+  "copyright": "OdeToCode LLC",
+  "description": "Use feature folders to organize controllers and views in ASP.NET Core",
+  "packOptions": {
+    "tags": [ "feature folders", "asp.net core" ],
+    "licenseUrl": "https://raw.githubusercontent.com/OdeToCode/AddFeatureFolders/master/LICENSE",
+    "projectUrl": "https://raw.githubusercontent.com/OdeToCode/AddFeatureFolders/",
+    "repository": {
+      "type": "git",
+      "url": "https://raw.githubusercontent.com/OdeToCode/AddFeatureFolders/"
+    }
+  },
 
   "dependencies": {
     "Microsoft.AspNetCore.Mvc.Razor": "1.0.1",

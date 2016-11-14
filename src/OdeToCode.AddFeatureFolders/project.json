@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "authors": [ "K. Scott Allen" ],
   "copyright": "OdeToCode LLC",
   "description": "Use feature folders to organize controllers and views in ASP.NET Core",

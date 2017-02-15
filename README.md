@@ -37,7 +37,9 @@ Add your feature folder to the list of assets to publish. In project.json:
     ]
   }
 ```
-... Or for Visual Studio 2017 add to your .csproj file:
+Visual Studio 2017 doesn't have a project.json and what to do depends the Release Candidate (RC) version you are using:  
+  
+_Visual Studio 2017 RC2_ you need to add to your .csproj file:
 ```
   <ItemGroup>
     <Content Include="wwwroot\**\*;**\*.cshtml;appsettings.json;web.config;Features\**\*.cshtml">
@@ -45,6 +47,9 @@ Add your feature folder to the list of assets to publish. In project.json:
     </Content>
   </ItemGroup>
 ```
+_Visual Studio 2017 RC4_ you don't need to add anything to your csproj file.  
+  
+If you had added the above because you were using RC2 then you will need to remove it when you use RC4.
 
 ### Just one more thing!
 AddFeatureFolders uses the namespace of the controller to figure out where the views are. 

@@ -6,7 +6,7 @@
   "packOptions": {
     "tags": [ "feature folders", "asp.net core" ],
     "licenseUrl": "https://raw.githubusercontent.com/OdeToCode/AddFeatureFolders/master/LICENSE",
-    "projectUrl": "https://raw.githubusercontent.com/OdeToCode/AddFeatureFolders/",
+    "projectUrl": "https://github.com/OdeToCode/AddFeatureFolders/",
     "repository": {
       "type": "git",
       "url": "https://raw.githubusercontent.com/OdeToCode/AddFeatureFolders/"

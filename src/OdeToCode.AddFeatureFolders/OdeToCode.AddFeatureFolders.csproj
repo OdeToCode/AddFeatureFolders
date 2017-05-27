@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Use feature folders to organize controllers and views in ASP.NET Core</Description>
+    <Copyright>OdeToCode LLC</Copyright>
+    <VersionPrefix>1.0.5</VersionPrefix>
+    <Authors>K. Scott Allen</Authors>
+    <TargetFrameworks>netstandard1.6;net452</TargetFrameworks>
+    <AssemblyName>OdeToCode.AddFeatureFolders</AssemblyName>
+    <PackageId>OdeToCode.AddFeatureFolders</PackageId>
+    <PackageTags>feature folders;asp.net core</PackageTags>
+    <PackageProjectUrl>https://github.com/OdeToCode/AddFeatureFolders/</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/OdeToCode/AddFeatureFolders/master/LICENSE</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://raw.githubusercontent.com/OdeToCode/AddFeatureFolders/</RepositoryUrl>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.6' ">$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="1.0.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>

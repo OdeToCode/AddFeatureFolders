@@ -1,29 +1,27 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{85530C9D-116C-4533-ADD8-F6B4EADC8A38}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6C8D0F52-A4B8-43C2-8086-2C1591DF47DA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6743F82F-63CC-4567-9913-5A4A92048654}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToCode.AddFeatureFolders", "src\OdeToCode.AddFeatureFolders\OdeToCode.AddFeatureFolders.csproj", "{3075800F-560F-4787-964E-484648201CDB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F70AEB0B-2C7E-45DA-805A-2A3500128660}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{41A0898F-34AC-4A6F-9364-5BA432412C14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToCode.AddFeatureFolders.Tests", "test\OdeToCode.AddFeatureFolders.Tests\OdeToCode.AddFeatureFolders.Tests.csproj", "{1108FCFF-072D-4B7A-A37F-7F1304821B73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{D3923ABE-3B29-469A-A6CD-0845029AA539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "sample\WebApplication\WebApplication.csproj", "{5EC27CA4-E5FB-46F9-8047-8214FF7ACEDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B55FC53B-F6B3-4504-B27F-3AFB6F77A4ED}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		appveyor.yml = appveyor.yml
 		build.ps1 = build.ps1
-		global.json = global.json
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OdeToCode.AddFeatureFolders", "src\OdeToCode.AddFeatureFolders\OdeToCode.AddFeatureFolders.xproj", "{92E54B65-C60C-46C2-8CDF-1CA8EF068EC4}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OdeToCode.AddFeatureFolders.Tests", "test\OdeToCode.AddFeatureFolders.Tests\OdeToCode.AddFeatureFolders.Tests.xproj", "{A021CDAF-1BDA-46A0-B501-360BB3D49067}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{D719E9F1-2BEF-4BF8-98C0-B5C2B493A18B}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplication", "sample\WebApplication\WebApplication.xproj", "{75900D14-AECA-4DAF-9719-DCF00F3A134C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,25 +29,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{92E54B65-C60C-46C2-8CDF-1CA8EF068EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92E54B65-C60C-46C2-8CDF-1CA8EF068EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92E54B65-C60C-46C2-8CDF-1CA8EF068EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92E54B65-C60C-46C2-8CDF-1CA8EF068EC4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A021CDAF-1BDA-46A0-B501-360BB3D49067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A021CDAF-1BDA-46A0-B501-360BB3D49067}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A021CDAF-1BDA-46A0-B501-360BB3D49067}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A021CDAF-1BDA-46A0-B501-360BB3D49067}.Release|Any CPU.Build.0 = Release|Any CPU
-		{75900D14-AECA-4DAF-9719-DCF00F3A134C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75900D14-AECA-4DAF-9719-DCF00F3A134C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75900D14-AECA-4DAF-9719-DCF00F3A134C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75900D14-AECA-4DAF-9719-DCF00F3A134C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3075800F-560F-4787-964E-484648201CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3075800F-560F-4787-964E-484648201CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3075800F-560F-4787-964E-484648201CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3075800F-560F-4787-964E-484648201CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1108FCFF-072D-4B7A-A37F-7F1304821B73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1108FCFF-072D-4B7A-A37F-7F1304821B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1108FCFF-072D-4B7A-A37F-7F1304821B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1108FCFF-072D-4B7A-A37F-7F1304821B73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EC27CA4-E5FB-46F9-8047-8214FF7ACEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EC27CA4-E5FB-46F9-8047-8214FF7ACEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EC27CA4-E5FB-46F9-8047-8214FF7ACEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EC27CA4-E5FB-46F9-8047-8214FF7ACEDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{92E54B65-C60C-46C2-8CDF-1CA8EF068EC4} = {85530C9D-116C-4533-ADD8-F6B4EADC8A38}
-		{A021CDAF-1BDA-46A0-B501-360BB3D49067} = {6743F82F-63CC-4567-9913-5A4A92048654}
-		{75900D14-AECA-4DAF-9719-DCF00F3A134C} = {D719E9F1-2BEF-4BF8-98C0-B5C2B493A18B}
+		{3075800F-560F-4787-964E-484648201CDB} = {6C8D0F52-A4B8-43C2-8086-2C1591DF47DA}
+		{1108FCFF-072D-4B7A-A37F-7F1304821B73} = {41A0898F-34AC-4A6F-9364-5BA432412C14}
+		{5EC27CA4-E5FB-46F9-8047-8214FF7ACEDF} = {D3923ABE-3B29-469A-A6CD-0845029AA539}
 	EndGlobalSection
 EndGlobal

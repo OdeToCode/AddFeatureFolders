@@ -8,6 +8,11 @@
 <body>
     @await Component.InvokeAsync("MainMenu")
     @RenderBody()
-    <footer>Footer rendered by _Layout</footer>
+    <footer>
+        Footer rendered by _Layout<br />
+        <a href="/">Home</a><br/>
+        <a href="/Foo/Home">Feature: Foo</a><br/>
+        <a href="/Bar/Home">Feature: Bar</a>
+    </footer>
 </body>
 </html>

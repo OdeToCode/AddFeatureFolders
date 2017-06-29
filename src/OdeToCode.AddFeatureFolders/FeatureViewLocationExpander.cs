@@ -14,23 +14,15 @@ namespace OdeToCode.AddFeatureFolders
             _placeholder = options.FeatureNamePlaceholder;
         }
 
-        public void PopulateValues(ViewLocationExpanderContext context)
-        {
+        public void PopulateValues(ViewLocationExpanderContext context) { }
 
-        }
-
-        public IEnumerable<string> ExpandViewLocations(
-            ViewLocationExpanderContext context,
-            IEnumerable<string> viewLocations)
+        public IEnumerable<string> ExpandViewLocations(ViewLocationExpanderContext context, IEnumerable<string> viewLocations)
         {
-            if (context == null)
-            {
+            if(context == null)
                 throw new ArgumentNullException(nameof(context));
-            }
-            if (viewLocations == null)
-            {
+
+            if(viewLocations == null)
                 throw new ArgumentNullException(nameof(viewLocations));
-            }
 
             var controllerDescriptor = context.ActionContext.ActionDescriptor as ControllerActionDescriptor;
             var featureName = controllerDescriptor?.Properties["feature"] as string;

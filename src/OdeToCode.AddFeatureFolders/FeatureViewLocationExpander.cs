@@ -16,7 +16,8 @@ namespace OdeToCode.AddFeatureFolders
 
         public void PopulateValues(ViewLocationExpanderContext context)
         {
-
+            // see: https://stackoverflow.com/questions/36802661/what-is-iviewlocationexpander-populatevalues-for-in-asp-net-core-mvc
+            context.Values["action_displayname"] = context.ActionContext.ActionDescriptor.DisplayName;
         }
 
         public IEnumerable<string> ExpandViewLocations(

@@ -20,18 +20,13 @@ namespace OdeToCode.AddFeatureFolders
             context.Values["action_displayname"] = context.ActionContext.ActionDescriptor.DisplayName;
         }
 
-        public IEnumerable<string> ExpandViewLocations(
-            ViewLocationExpanderContext context,
-            IEnumerable<string> viewLocations)
+        public IEnumerable<string> ExpandViewLocations(ViewLocationExpanderContext context, IEnumerable<string> viewLocations)
         {
-            if (context == null)
-            {
+            if(context == null)
                 throw new ArgumentNullException(nameof(context));
-            }
-            if (viewLocations == null)
-            {
+
+            if(viewLocations == null)
                 throw new ArgumentNullException(nameof(viewLocations));
-            }
 
             var controllerDescriptor = context.ActionContext.ActionDescriptor as ControllerActionDescriptor;
             var featureName = controllerDescriptor?.Properties["feature"] as string;

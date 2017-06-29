@@ -12,27 +12,28 @@ namespace OdeToCode.AddFeatureFolders
 
         public FeatureControllerModelConvention(FeatureFolderOptions options)
         {
+            if(options == null)
+                throw new ArgumentNullException(nameof(options));
+
             _folderName = options.FeatureFolderName;
             _nameDerivationStrategy = options.DeriveFeatureFolderName ?? DeriveFeatureFolderName;
         }
 
-        public void Apply(ControllerModel controller)
+        public void Apply(ControllerModel model)
         {
-            if (controller == null)
-            {
-                throw new ArgumentNullException(nameof(controller));
-            }
+            if(model == null)
+                throw new ArgumentNullException(nameof(model));
 
-            var featureName = _nameDerivationStrategy(controller);            
-            controller.Properties.Add("feature", featureName);
+            var featureName = _nameDerivationStrategy(model);
+            model.Properties.Add("feature", featureName);
         }
 
         private string DeriveFeatureFolderName(ControllerModel model)
         {
             var @namespace = model.ControllerType.Namespace;
             var result = @namespace.Split('.')
-                  .SkipWhile(s => s != _folderName)
-                  .Aggregate("", Path.Combine);
+                                   .SkipWhile(s => s != _folderName)
+                                   .Aggregate("", Path.Combine);
 
             return result;
         }

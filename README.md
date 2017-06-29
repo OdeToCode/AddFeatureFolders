@@ -26,8 +26,20 @@
     }    
 ```
 
-### Don't Forget!
-Add your feature folder to the list of assets to publish. In project.json:
+### Now you can organize controllers and views in a Features folder hierarchy
+
+See the sample folder for more examples. 
+
+\Features
+  \Home
+      \HomeController.cs
+      \HomeViewModel.cs
+      \HomeIndexHandler.cs
+      \HomeIndexQuery.cs
+      \Index.cshtml
+
+### For project.json
+If you are using a version of .NET Core with project.json, add your feature folder to the list of assets to publish. In project.json:
 ```
   "publishOptions": {
     "include": [
@@ -37,19 +49,6 @@ Add your feature folder to the list of assets to publish. In project.json:
     ]
   }
 ```
-Visual Studio 2017 doesn't have a project.json and what to do depends the Release Candidate (RC) version you are using:  
-  
-_Visual Studio 2017 RC2_ you need to add to your .csproj file:
-```
-  <ItemGroup>
-    <Content Include="wwwroot\**\*;**\*.cshtml;appsettings.json;web.config;Features\**\*.cshtml">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-  </ItemGroup>
-```
-_Visual Studio 2017 RC4_ you don't need to add anything to your csproj file.  
-  
-If you had added the above because you were using RC2 then you will need to remove it when you use RC4.
 
 ### Just one more thing!
 AddFeatureFolders uses the namespace of the controller to figure out where the views are. 
@@ -61,4 +60,4 @@ For example:
 ```
 The above example folder structure relies on the namespace of the controller being `<whatever>.Features.Robots`. 
 
-If you encounter problems with MVC locating the views check your controller namespace.
+If you encounter problems with MVC locating the views, check your controller namespace.

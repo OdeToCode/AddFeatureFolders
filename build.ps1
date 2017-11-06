@@ -20,4 +20,4 @@ pushd .\test\OdeToCode.AddFeatureFolders.Tests\
 exec { & dotnet test -c Release }
 popd
 
-exec { & dotnet pack .\src\OdeToCode.AddFeatureFolders -c Release -o .\artifacts  }
+exec { & dotnet pack .\src\OdeToCode.AddFeatureFolders -c Release -o ..\..\artifacts  }

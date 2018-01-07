@@ -9,5 +9,11 @@ namespace WebApplication.Features.Home
         {
             return View();
         }
+
+        [Route("[action]")]
+        public IActionResult Create()
+        {
+            return Content("Create");
+        }
     }
 }

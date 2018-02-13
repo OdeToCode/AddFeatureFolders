@@ -29,6 +29,7 @@ namespace Microsoft.Extensions.DependencyInjection
                                          o.ViewLocationFormats.Clear();
                                          o.ViewLocationFormats.Add(options.FeatureNamePlaceholder + @"\{0}.cshtml");
                                          o.ViewLocationFormats.Add(options.FeatureFolderName + @"\Shared\{0}.cshtml");
+                                         o.ViewLocationFormats.Add(options.DefaultViewLocation);
                                          o.ViewLocationExpanders.Add(expander);
                                      });
 

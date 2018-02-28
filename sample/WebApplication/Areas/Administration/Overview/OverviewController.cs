@@ -1,7 +1,14 @@
-﻿namespace WebApplication.Areas.Administration.Overview
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace WebApplication.Areas.Administration.Overview
 {
-    public class OverviewController
+    [Area("Administration")]
+    public class OverviewController : Controller
     {
-        
+        [HttpGet]
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace OdeToCode.AddFeatureFolders
             DefaultViewLocation = @"\Features\{0}\{1}.cshtml";
             EnableAreas = false;
             AreaFolderName = "Areas";
-            DefaultAreaViewLocation = @"\Areas\{2}\{0}\{1}.cshtml";
+            DefaultAreaViewLocation = @"\Areas\{2}\{1}\{0}.cshtml";
         }
 
         /// <summary>
@@ -63,8 +63,8 @@ namespace OdeToCode.AddFeatureFolders
 
         /// <summary>
         /// The default view location for areas. Helps intellisense find razor views. Example:
-        ///     "\Areas\{2}\{0}\{1}.cshtml". 
-        /// Razor replaces the area name into {2} placeholder, the controller name into {0} placeholder & view name into the {1} placeholder. 
+        ///     "\Areas\{2}\{1}\{0}.cshtml". 
+        /// Razor replaces the area name into {2} placeholder, the controller name into {1} placeholder & view name into the {0} placeholder. 
         /// </summary>
         public string DefaultAreaViewLocation { get; set; }
     }

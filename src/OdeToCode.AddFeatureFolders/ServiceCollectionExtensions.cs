@@ -30,6 +30,14 @@ namespace Microsoft.Extensions.DependencyInjection
                                          o.ViewLocationFormats.Add(options.FeatureNamePlaceholder + @"\{0}.cshtml");
                                          o.ViewLocationFormats.Add(options.FeatureFolderName + @"\Shared\{0}.cshtml");
                                          o.ViewLocationFormats.Add(options.DefaultViewLocation);
+                                         if (options.EnableAreas)
+                                         {
+                                             o.AreaViewLocationFormats.Clear();
+                                             o.AreaViewLocationFormats.Add(options.AreaFolderName + @"\{2}\{1}\{0}.cshtml");
+                                             o.AreaViewLocationFormats.Add(options.AreaFolderName + @"\{2}\Shared\{0}.cshtml");
+                                             o.AreaViewLocationFormats.Add(options.AreaFolderName + @"\Shared\{0}.cshtml");
+                                             o.AreaViewLocationFormats.Add(options.DefaultAreaViewLocation);
+                                         }
                                          o.ViewLocationExpanders.Add(expander);
                                      });
 

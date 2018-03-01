@@ -11,7 +11,8 @@ namespace WebApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc()
-                    .AddFeatureFolders(new FeatureFolderOptions{EnableAreas = true});
+                    .AddFeatureFolders()
+                    .AddAreaFeatureFolders();
 
             // "Features" is the default feature folder root. To override, pass along 
             // a new FeatureFolderOptions object with a different FeatureFolderName

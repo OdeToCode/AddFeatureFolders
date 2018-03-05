@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>Use feature folders to organize controllers and views in ASP.NET Core</Description>
     <Copyright>OdeToCode LLC</Copyright>
-    <VersionPrefix>2.0.0</VersionPrefix>
+    <VersionPrefix>2.0.1</VersionPrefix>
     <Authors>K. Scott Allen</Authors>
     <TargetFrameworks>netstandard1.6;netstandard2.0; net452</TargetFrameworks>
     <AssemblyName>OdeToCode.AddFeatureFolders</AssemblyName>
@@ -32,4 +32,5 @@
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
+
 </Project>

@@ -13,7 +13,7 @@ namespace OdeToCode.AddFeatureFolders
             FeatureFolderName = "Features";
             DeriveFeatureFolderName = null;
             FeatureNamePlaceholder = "{Feature}";
-            DefaultViewLocation = @"\Features\{0}\{1}.cshtml";
+            DefaultViewLocation = @"\Features\{1}\{0}.cshtml";
         }
 
         /// <summary>

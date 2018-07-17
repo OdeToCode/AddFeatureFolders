@@ -62,6 +62,12 @@ The above example folder structure relies on the namespace of the controller bei
 
 If you encounter problems with MVC locating the views, check your controller namespace.
 
+#### Disclaimer
+
+Your feature folder name (`FeatureFolderOptions.FeatureFolderName` or `AreaFeatureFolderOptions.AreaFolderName` if using Areas) cannot be in your project namespace.
+
+See: [Issue #27](https://github.com/OdeToCode/AddFeatureFolders/issues/27)
+
 ### Using areas Areas
 
 If you want to enable areas, there are two pieces of code to add:

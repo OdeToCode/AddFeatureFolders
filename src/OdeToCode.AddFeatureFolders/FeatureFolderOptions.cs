@@ -37,7 +37,7 @@ namespace OdeToCode.AddFeatureFolders
         /// Used internally in RazorOptions.ViewLocationFormats strings. The Default is {Feature},
         /// so the first format string in Razor options will be {Feature}\{0}.cshtml. Razor places 
         /// the view name into the {0} placeholder, the FeatureViewLocationExander class in this project
-        /// replaces {feature} with the feature path derived from the ControllerModel
+        /// replaces {Feature} with the feature path derived from the ControllerModel
         /// </summary>
         public string FeatureNamePlaceholder { get; set; }
 

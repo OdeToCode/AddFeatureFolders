@@ -38,20 +38,9 @@ See the sample folder for more examples.
       \HomeIndexQuery.cs
       \Index.cshtml
 
-### For project.json
-If you are using a version of .NET Core with project.json, add your feature folder to the list of assets to publish. In project.json:
-```
-  "publishOptions": {
-    "include": [
-      "wwwroot",
-      "web.config",
-      "Features/**/*.cshtml"
-    ]
-  }
-```
 
-### Just one more thing!
-AddFeatureFolders uses the namespace of the controller to figure out where the views are. 
+### Important!
+AddFeatureFolders **uses the namespace of the controller to figure out where the views are**. 
 For example: 
 ```
 /Features

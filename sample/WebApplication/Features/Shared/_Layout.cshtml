@@ -2,18 +2,37 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>    
+    <meta name="viewport" content="width=device-width"/>
+    <title>@ViewBag.Title</title>
 </head>
 <body>
-    @await Component.InvokeAsync("MainMenu")
-    @RenderBody()
-    <footer>
-        Footer rendered by _Layout<br />
-        <a href="/">Home</a><br/>
-        <a href="/Foo/Home">Feature: Foo</a><br/>
-        <a href="/Bar/Home">Feature: Bar</a><br />
-        <a href="/Administration/Overview">Area Administration: Overview</a>
-    </footer>
+@await Component.InvokeAsync("MainMenu")
+@RenderBody()
+<footer>
+    Footer rendered by _Layout
+    <ul>
+        <li>
+            <a href="/">Home</a><br/>
+        </li>
+        <li>
+            <a href="/Foo/Home">Feature: Foo</a><br/>
+        </li>
+        <li>
+            <a href="/SubFoo/SubFoo">Feature: Sub Foo</a><br/>
+        </li>
+        <li>
+            <a href="/Bar/Home">Feature: Bar</a><br/>
+        </li>
+        <li>
+            <a href="/Administration/Overview">Area Administration: Overview</a><br/>
+        </li>
+        <li>
+            <a href="/Administration/Test">Area Administration: Test</a>
+        </li>
+        <li>
+            <a href="/Administration/SubFolder">Area Administration: SubFolder</a>
+        </li>
+    </ul>
+</footer>
 </body>
 </html>

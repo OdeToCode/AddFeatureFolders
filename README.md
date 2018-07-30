@@ -68,7 +68,7 @@ Your feature folder name (`FeatureFolderOptions.FeatureFolderName` or `AreaFeatu
 
 See: [Issue #27](https://github.com/OdeToCode/AddFeatureFolders/issues/27)
 
-### Using areas Areas
+### Using areas
 
 If you want to enable areas, there are two pieces of code to add:
 ```c#
@@ -115,6 +115,7 @@ above the Startup class between the using statements and the namespace.
 [assembly: AspMvcViewLocationFormat(@"~\Features\Shared\{0}.cshtml")]
 
 [assembly: AspMvcAreaViewLocationFormat(@"~\Areas\{2}\{1}\{0}.cshtml")]
+[assembly: AspMvcAreaViewLocationFormat(@"~\Areas\{2}\Features\{1}\{0}.cshtml")]
 [assembly: AspMvcAreaViewLocationFormat(@"~\Areas\{2}\{0}.cshtml")]
 [assembly: AspMvcAreaViewLocationFormat(@"~\Areas\{2}\Shared\{0}.cshtml")]
 ```

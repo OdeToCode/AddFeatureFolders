@@ -5,7 +5,7 @@
     <Copyright>OdeToCode LLC</Copyright>
     <VersionPrefix>2.0.1</VersionPrefix>
     <Authors>K. Scott Allen</Authors>
-    <TargetFrameworks>netstandard1.6;netstandard2.0; net452</TargetFrameworks>
+    <TargetFrameworks>netstandard1.6;netstandard2.0;net452</TargetFrameworks>
     <AssemblyName>OdeToCode.AddFeatureFolders</AssemblyName>
     <PackageId>OdeToCode.AddFeatureFolders</PackageId>
     <PackageTags>feature folders;asp.net core</PackageTags>

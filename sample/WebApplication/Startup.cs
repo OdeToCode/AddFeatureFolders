@@ -18,13 +18,13 @@ namespace WebApplication
             // a new FeatureFolderOptions object with a different FeatureFolderName
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseDeveloperExceptionPage();
-            app.UseMvcWithDefaultRoute().UseMvc(routes => 
-                routes.MapRoute(
-                    name: "areaRoute",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"));
+            app.UseRouting();
+            app.UseEndpoints(e => {
+                e.MapControllerRoute(name:"areaRoute", pattern:"{area:exists}/{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }

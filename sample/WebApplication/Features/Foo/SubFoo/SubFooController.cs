@@ -2,6 +2,7 @@
 
 namespace WebApplication.Features.Foo.SubFoo
 {
+    [Route("Foo/SubFoo/[controller]")]
     public class SubFooController : Controller
     {
         [HttpGet]

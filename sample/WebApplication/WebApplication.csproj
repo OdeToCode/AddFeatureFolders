@@ -1,13 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-    <PreserveCompilationContext>true</PreserveCompilationContext>
-    <AssemblyName>WebApplication</AssemblyName>
-    <OutputType>Exe</OutputType>
-    <PackageId>WebApplication</PackageId>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\OdeToCode.AddFeatureFolders\OdeToCode.AddFeatureFolders.csproj" />

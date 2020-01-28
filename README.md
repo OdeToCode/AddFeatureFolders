@@ -29,15 +29,15 @@
 ### Now you can organize controllers and views in a Features folder hierarchy
 
 See the sample folder for more examples. 
-
-\Features
-  \Home
-      \HomeController.cs
-      \HomeViewModel.cs
-      \HomeIndexHandler.cs
-      \HomeIndexQuery.cs
-      \Index.cshtml
-
+```
+\Features    
+  \Home    
+      \HomeController.cs    
+      \HomeViewModel.cs    
+      \HomeIndexHandler.cs    
+      \HomeIndexQuery.cs    
+      \Index.cshtml    
+```
 
 ### Important!
 AddFeatureFolders **uses the namespace of the controller to figure out where the views are**. 
